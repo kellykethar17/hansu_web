@@ -91,6 +91,7 @@ class Home extends StatelessWidget {
                        children: [
                          Expanded(child: About(),),
                          Expanded(child: Services())
+
                        ],
                      ),
                    ],
@@ -153,7 +154,7 @@ class FarmersCompanion extends StatelessWidget {
           body: const Column(
             children: [
               Text('Farmers Companion (formerly Fapp), is a smart solution to revolutionize Agriculture, '
-                  'stop hunger and improve the economic wellbeing of African farmers.',
+                  'stop hunger and improve the economic well-being of African farmers.',
                   style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20, height: 0.8),),
               SizedBox(height: 30,),
               Text('Our solution is smart and intelligent to provides timely, context-specific information that enables smallholder farmers and those who support them to identify, suggest treatment, '
