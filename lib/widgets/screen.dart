@@ -1,25 +1,25 @@
 class Breakpoints {
-  static const desktop = 1060;
-  static const tablet = 834;
-  static const mobile = 375;
+  static const pc = 1200;
+  static const tablet = 900;
+  static const phone = 600;
 
   static const twoColLayoutMinWidth = 640;
 }
 
-double horizontalPadding(double screenWidth) {
-  if (screenWidth > Breakpoints.desktop) {
+double horizontalPadding(double? screenWidth) {
+  if (screenWidth! > Breakpoints.pc) {
     return 0;
-  } else if (screenWidth > Breakpoints.mobile) {
+  } else if (screenWidth > Breakpoints.phone) {
     return 28;
   } else {
     return 20;
   }
 }
 
-double sliverHorizontalPadding(double screenWidth) {
-  if (screenWidth > Breakpoints.desktop) {
-    return (screenWidth - Breakpoints.desktop) / 2;
-  } else if (screenWidth > Breakpoints.mobile) {
+double sliverHorizontalPadding(double? screenWidth) {
+  if (screenWidth! > Breakpoints.pc) {
+    return (screenWidth - Breakpoints.pc) / 2;
+  } else if (screenWidth > Breakpoints.phone) {
     return 28;
   } else {
     return 20;
